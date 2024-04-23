@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./form.css";
 import axios from "axios";
+import ReactAnimatedWeather from "react-animated-weather";
 
 
 export default function Form(props) {
@@ -49,7 +50,13 @@ export default function Form(props) {
       <p className="text-center"> {temperature}</p>
       <div className="row">
         <div className="col text-center ">
-          
+          <ReactAnimatedWeather
+            className="i"
+            icon="CLEAR_DAY"
+            color="Goldenrod"
+            size={70}
+            animate={true}
+          />
         </div>
         <div className="col">
           <p className="humid-wind">
